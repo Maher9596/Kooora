@@ -8,8 +8,8 @@ import data from '../data/data.json'
 function Card({d}) {
     return (
     
-    <div className="cards-container">
-        <div className="row">
+        <div className="cards-container">
+        
             <div className="card">                  
                 <div className="card-header">
                     <h1>{d.name}</h1>
@@ -19,20 +19,19 @@ function Card({d}) {
                     <p><strong>Area: {d.Location}</strong></p>
                     <p><strong>Size: {d.size}</strong></p>
                     <p><strong>Phone: {d.phone}</strong></p>
-                    <p className="btn" key={d.name}><Link to={`/booking/${d.name}`}>Book {d.name}</Link></p>
-                    
+                    <p className="btn" key={d.name}><Link to={`/booking/${d.name}`}>Book {d.name}</Link></p>                  
                 </div>                              
             </div>
-        </div>
-    </div>    
+        
+        </div> 
     )
 }
 
 function CardContainer() {
     return (
-            <>
-                {data.map(d => <Card d={d} />)}   
-            </>
+        <div className="row">
+            {data.map(d => <Card d={d} />)}   
+        </div>    
         
     )   
 }

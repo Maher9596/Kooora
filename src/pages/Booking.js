@@ -35,10 +35,6 @@ function Booking() {
     <div className="form-container">
         <div className="form-row">               
             <form className="form" onSubmit={handleSubmit} >
-                <Calendar className="cal"
-                    value={date}
-                    onChange={setDate}                                
-                /> 
                 <div className="form-text"> 
                 <h1 style={{color: "#fff"}}>Booking for {thisName.name} pitch</h1>                     
                 <input className="input" type="text" placeholder="Enter Your Name"  required value={user} onChange={(e) => {setUser(e.target.value)}} /> 
@@ -62,7 +58,11 @@ function Booking() {
                     <option className="choice" style={{color: 'black'}}>No</option>
                 </select>   
                 </div>
-                <br />              
+                <br />  
+                <Calendar className="cal"
+                    value={date}
+                    onChange={setDate}                                
+                />              
                 <button className="submit" onClick={ () => setData()} >{submit}</button>
                 </div>
             </form>
