@@ -1,38 +1,209 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Header--------------------------------------------------------------- */
+.head-text {
+  background: #56ab2f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
+
+  font-family: "AvaraBold";
+  font-weight: bolder;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Cards-------------------------------------------------------------- */
+
+.card-container {
+  width: 90%;
+  margin: 50px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin-top: 5%;
+}
+
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: #56ab2f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #fff;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  background-image: url("https://i.pinimg.com/originals/a1/d5/71/a1d57176a002c4e1bf971adaac0ac621.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+  background: #56ab2f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 620px) {
+  .card-container {
+    width: 100%;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+/* FORM---------------------------------------------------------------------------------------------------- */
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin-top: 5%;
+}
+
+.form {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px;
+  justify-content: center;
+}
+
+.form-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-right: 4%;
+  font-family: "AvaraBold";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.form-text,
+.msg {
+  width: 60%;
+}
+
+.form-text .input,
+.msg select {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #90ee90;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.submit {
+  background: #56ab2f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a8e063,
+    #56ab2f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Submit--------------------------------------------------------------------------- */
+.submit-header {
+  margin-top: 5%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.booking-details {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  border: 3px solid green;
+  padding: 10px;
+  background-image: url("https://i.pinimg.com/originals/a1/d5/71/a1d57176a002c4e1bf971adaac0ac621.jpg");
+
+}
+
+/* Calendar----------------------------------------------- */
+.cal {
+  margin-right: 5%;
 }
