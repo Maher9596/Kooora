@@ -51,12 +51,12 @@
 
 .card-header {
   text-align: center;
+  color: black;
   padding: 50px 10px;
-  background: #56ab2f;
+  background: black;
+  /* background: #56ab2f;
   background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
-  background: linear-gradient(to right, #a8e063, #56ab2f);
-
-  color: #fff;
+  background: linear-gradient(to right, #a8e063, #56ab2f); */
 }
 
 .card-body {
@@ -74,9 +74,10 @@
   color: #fff;
   font-weight: bolder;
   text-align: center;
-  background: #56ab2f;
+  background: black;
+  /* background: #56ab2f;
   background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
-  background: linear-gradient(to right, #a8e063, #56ab2f);
+  background: linear-gradient(to right, #a8e063, #56ab2f); */
 
   margin-top: 30px;
   text-decoration: none;
