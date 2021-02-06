@@ -31,6 +31,9 @@
 }
 
 /* Cards-------------------------------------------------------------- */
+.car-container {
+  margin-bottom: 5%;
+}
 .row {
   display: flex;
   justify-content: center;
@@ -51,23 +54,20 @@
 
 .car-header {
   text-align: center;
-  color: red;
   padding: 50px 10px;
-  background: green;
-  /* background: #56ab2f;
+  background: #56ab2f;
   background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
-  background: linear-gradient(to right, #a8e063, #56ab2f); */
+  background: linear-gradient(to right, #a8e063, #56ab2f);
 }
 
 .car-body {
   padding: 30px 20px;
   text-align: center;
   font-size: 18px;
-  background: yellow;
-  /* background-image: url("https://i.pinimg.com/originals/a1/d5/71/a1d57176a002c4e1bf971adaac0ac621.jpg");
+  background-image: url("https://i.pinimg.com/originals/a1/d5/71/a1d57176a002c4e1bf971adaac0ac621.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
 }
 
 .car-body .btn {
@@ -75,10 +75,9 @@
   color: #fff;
   font-weight: bolder;
   text-align: center;
-  background: black;
-  /* background: #56ab2f;
+  background: #56ab2f;
   background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
-  background: linear-gradient(to right, #a8e063, #56ab2f); */
+  background: linear-gradient(to right, #a8e063, #56ab2f);
 
   margin-top: 30px;
   text-decoration: none;
