@@ -12,7 +12,7 @@ useEffect(() => {
 
     return (
         <div className="submit-page">          
-            <div className="submit-header">
+            <div className="submit-text">
                 <p>Your booking has been confirmed!</p>
                 <p>Review your booking details...</p>    
             </div>

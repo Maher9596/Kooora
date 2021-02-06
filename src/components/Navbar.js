@@ -9,11 +9,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Navbar() {
     return (
         <>
+        <div className="head">
           <div className="head-text">
             <h1>KOOORA</h1>
             <p>Book your pitch and let the games begin</p>
           </div>
-          
+          </div>
             <Switch>
                 <Route exact path="/">
                     <Home />
@@ -28,6 +29,7 @@ function Navbar() {
                     <Booking />
                 </Route>                
             </Switch>
+            
             </>
     )
 }
