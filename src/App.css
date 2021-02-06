@@ -63,10 +63,10 @@
   padding: 30px 20px;
   text-align: center;
   font-size: 18px;
-  background-image: url("https://i.pinimg.com/originals/a1/d5/71/a1d57176a002c4e1bf971adaac0ac621.jpg");
+  /* background-image: url("https://i.pinimg.com/originals/a1/d5/71/a1d57176a002c4e1bf971adaac0ac621.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .card-body .btn {
