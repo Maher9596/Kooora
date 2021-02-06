@@ -37,39 +37,40 @@
   flex-wrap: wrap;
 }
 
-.card {
+.car {
   padding: 20px;
   margin: 20px;
   width: 300px;
   height: 400px;
 }
 
-.card:hover {
+.car:hover {
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
 
-.card-header {
+.car-header {
   text-align: center;
   color: red;
   padding: 50px 10px;
-  background: black;
+  background: green;
   /* background: #56ab2f;
   background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
   background: linear-gradient(to right, #a8e063, #56ab2f); */
 }
 
-.card-body {
+.car-body {
   padding: 30px 20px;
   text-align: center;
   font-size: 18px;
+  background: yellow;
   /* background-image: url("https://i.pinimg.com/originals/a1/d5/71/a1d57176a002c4e1bf971adaac0ac621.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; */
 }
 
-.card-body .btn {
+.car-body .btn {
   display: block;
   color: #fff;
   font-weight: bolder;

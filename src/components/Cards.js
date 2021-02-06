@@ -8,14 +8,14 @@ import data from '../data/data.json'
 function Card({d}) {
     return (
     
-        <div className="cards-container">
+        <div className="car-container">
         
-            <div className="card">                  
-                <div className="card-header">
+            <div className="car">                  
+                <div className="car-header">
                     <h1>{d.name}</h1>
                     <a href="https://www.google.com/maps/place/Bawshar,+Muscat/@23.5631449,58.4017564,14z/data=!3m1!4b1!4m5!3m4!1s0x3e91fe1c5d42c1b3:0x5db3140a2a7dc33c!8m2!3d23.5651914!4d58.4201892">Location</a>
                 </div>
-                <div className="card-body">
+                <div className="car-body">
                     <p><strong>Area: {d.Location}</strong></p>
                     <p><strong>Size: {d.size}</strong></p>
                     <p><strong>Phone: {d.phone}</strong></p>
